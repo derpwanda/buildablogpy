@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+ <html>
+     <head>
+         <title>build-a-blog</title>
+     </head>
+
+     <style type = "text/css">
+         body {
+             font-family: sans-serif;
+             width: 800px;
+             margin: 0 auto;
+             padding: 10px;
+         }
+         .error {
+             color:red
+         }
+         label {
+             display: block;
+             font-size: 20px;
+         }
+         input[type=text] {
+             font-size: 24px;
+         }
+         hr {
+             margin: 20px auto;
+         }
+         .art + .art {
+             margin-top: 20px;
+         }
+         .blogpost-title {
+             margin: 0;
+             font-size: 20px;
+         }
+         .blogpost-body {
+             margin: 0;
+             font-size: 17px;
+         }
+     </style>
+
+      <body>
+          <a href = "/blog">home</a>
+          <a href = "/newpost">new post</a>
+          <h1>build-a-blog</h1>
+
+          {% block blog %}
+          {% endblock %}
+
+      </body>
+
+<html>

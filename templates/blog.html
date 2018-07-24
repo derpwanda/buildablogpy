@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block blog %}
+
+{% for blog in blogs %}
+    <div class="blogpost">
+        <div class = "blogpost-title"><a href = '/blog/{{blog.key().id()}}' >{{blog.title}}</a></div>
+        <pre class="blogpost-body">{{blog.article}}</pre>
+        <br>
+        <br>
+    </div>
+{% endfor %}
+{% endblock %}
